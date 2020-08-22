@@ -1,0 +1,21 @@
+//Section Hero
+
+.hero{    
+    text-align: center;
+    padding-bottom: $section;
+    &__fondo{
+        height: 300px;
+        margin: 0 -1 * $wrapper;
+        background:url('../../images/image-mockups.png') center bottom no-repeat, url('../../images/bg-intro-mobile.svg') center;
+        background-size: 345px, cover;
+    }
+    &__h1{
+        @include title(2.5rem, 300)
+    }
+    &__copy{
+        @include copy();
+    }
+    &__button{
+        @include botton();
+    }
+}

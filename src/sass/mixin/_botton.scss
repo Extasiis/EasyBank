@@ -1,0 +1,9 @@
+@mixin botton {
+        color: $white;
+        border: none;
+        background-image: linear-gradient(to right, $green 0%, $blue 100%);
+        padding: .9em 2.2em;
+        border-radius: 25px;
+        text-decoration: none;
+        margin-top: 1rem;
+}

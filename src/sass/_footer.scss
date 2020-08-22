@@ -1,0 +1,29 @@
+.footer{
+    padding-top: $section;
+    background-color: $purple;
+    &__link{
+        color: $grayTwo;
+        display: block;
+        text-decoration: none !important;
+        padding: 0.3rem 0;
+        font-size: 0.9rem;
+    }
+    &__social{
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: repeat(5, 25px);
+        justify-content: center;
+        align-self: center;
+        padding: 1rem 0;
+    }
+    &__botton{
+        @include botton();
+        margin: 1rem 0 ;
+    }
+    &__copyright{
+        color: $gray;
+        font-size: 0.9rem;
+        padding: 1rem 0;
+        margin: 0;
+    }
+}

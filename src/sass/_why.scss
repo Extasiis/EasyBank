@@ -1,0 +1,19 @@
+.why{
+    background: $grayTwo;
+    padding: $section 0;
+    &__h2{
+        @include title(2rem, 300)
+    }
+    &__copy{
+        @include copy();
+        margin-bottom: 3rem;
+    }
+    &__item{
+        margin-bottom: -1.2rem;
+    }
+    &__h3 {
+        @include title(1.5rem, 300)
+    }
+    
+}
+
