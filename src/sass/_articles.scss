@@ -3,6 +3,7 @@
     padding: $section 0;
     &__h2{
         @include title(2rem, 300);
+        padding-bottom: 1.5rem;
     }
     &__grid{
         display: grid;
@@ -28,10 +29,29 @@
     }
     &__h4{
         font-size: 1.2rem;
+        a{
+            text-decoration: inherit;
+            color: inherit;
+            @include hover-focus-active {
+                color: $green;
+            }
+        }
     }
     &__copy{
         @include copy;
         font-size: 0.97rem;
+    }
+
+    @media screen and (min-width: 780px) {
+        &__grid{
+            grid-template-columns: 1fr 1fr
+        }
+    }
+
+    @media screen and (min-width:1120px) {
+        &__grid{
+            grid-template-columns: repeat(4, 1fr)
+        }
     }
     
 }

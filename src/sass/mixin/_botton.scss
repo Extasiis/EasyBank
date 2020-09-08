@@ -6,4 +6,6 @@
         border-radius: 25px;
         text-decoration: none;
         margin-top: 1rem;
+        cursor: pointer;
+        &:hover { background-image: linear-gradient(to right, hsl(136, 23%, 74%) 0%, hsl(192, 62%, 65%) 100%); }
 }

@@ -1,22 +1,47 @@
 .icon {
     &__facebook {
         @include icon;
-        background-image: url('../../images/icon-facebook.svg');
+        background-image: url('../../images/icon-facebook.svg');        
+        color: white;
+        &:hover{
+        filter: invert(30%);
+        cursor: pointer;
+        }
     }
     &__youtube{
       @include icon;
       background-image: url('../../images/icon-youtube.svg');
+      color: white;
+        &:hover{
+        filter: invert(30%);
+        cursor: pointer;
+      }
     }
     &__twitter {
       @include icon;
       background-image: url('../../images/icon-twitter.svg');
+      color: white;
+        &:hover{
+        filter: invert(30%);
+        cursor: pointer;
+      }
     }
     &__pinterest {
       @include icon;
       background-image: url('../../images/icon-pinterest.svg');
+      color: white;
+        &:hover{
+        filter: invert(30%);
+        cursor: pointer;
+      }
     }
     &__instagram {
       @include icon;
       background-image: url('../../images/icon-instagram.svg');
+      color: white;
+        &:hover{
+        filter: invert(30%);
+        cursor: pointer;
+      }
     }
   }

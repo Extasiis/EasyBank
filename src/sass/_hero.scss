@@ -18,4 +18,53 @@
     &__button{
         @include botton();
     }
+    @media screen and (min-width: 780px){
+        text-align: left;
+        background: url('../../images/bg-intro-desktop.svg') right -800px top -280px no-repeat;
+        min-height: 550px;
+        background-size: auto;
+        display: block;
+        box-sizing: border-box;
+
+        &__content{
+            position: relative;
+            display: grid;
+            grid-template-areas: "description img";
+            grid-template-columns: 400px 1fr;
+            align-items: center;
+            min-height: 565px;
+        }
+        &__description{
+        }
+        &__fondo{            
+            grid-area: img;
+            display: flex;
+            min-height: inherit;
+            position: absolute;
+            top: 0;
+            left: 37%;
+            width: 100%;
+            height: 768px;
+            background: url('../../images/image-mockups.png') left top -150px no-repeat, none;
+            background-size: auto;            
+        }
+        &__mockups{            
+            display: block;
+            margin-left: auto;
+            margin-right: 0;
+            margin-top: 0;
+            height: 250%;
+            left: initial;
+            right: 0;
+            top: 0;
+
+        }
+    }
+    @media screen and (min-width: 1120px){
+        background: url('../../images/bg-intro-desktop.svg') right -500px top -280px no-repeat;
+
+        &__fondo{
+            left: 40%;           
+        }
+    }
 }

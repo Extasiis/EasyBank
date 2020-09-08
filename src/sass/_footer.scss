@@ -1,13 +1,6 @@
 .footer{
     padding-top: $section;
-    background-color: $purple;
-    &__link{
-        color: $grayTwo;
-        display: block;
-        text-decoration: none !important;
-        padding: 0.3rem 0;
-        font-size: 0.9rem;
-    }
+    background-color: $purple;    
     &__social{
         display: grid;
         grid-gap: 8px;
@@ -15,6 +8,17 @@
         justify-content: center;
         align-self: center;
         padding: 1rem 0;
+        
+    }
+    &__link{
+        color: $grayTwo;
+        display: block;
+        text-decoration: none !important;
+        padding: 0.3rem 0;
+        font-size: 0.9rem;
+        @include hover-focus-active{
+            color: $green;
+        }
     }
     &__botton{
         @include botton();
@@ -25,5 +29,28 @@
         font-size: 0.9rem;
         padding: 1rem 0;
         margin: 0;
+    }
+    @media screen and (min-width:780px) {
+        padding-top: 1.5rem;
+        &__grid{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .col-1{
+            display: grid;
+            align-items: stretch;
+        }
+        &__social{
+            justify-content: inherit;
+        }
+        .col-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .col-3{
+            display: grid;
+            justify-content: center;
+        }
     }
 }
